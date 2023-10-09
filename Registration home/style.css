@@ -22,16 +22,16 @@
     height: 35px;
 }
 .banner-text{
-    margin-top: 90px;
-    margin-bottom: 30px;
+    margin-top: 7vw;
+    /* margin-bottom: 4vh; */
     display: inline-block;
 }
 .banner-text h1{
     color: white;
-    font-size: 66px;
+    font-size: 8vh;
     font-weight: 600;
-    line-height: 75px;
-    letter-spacing: 3px;
+    line-height: 8vh;
+    letter-spacing: 0.8vh;
 }
 #span1{
     color: #4F709C;
@@ -40,12 +40,14 @@
     color:#E5D283;
 }
 .banner-text p{
-    margin-top: 30px;
+    margin-top: 6vh;
 }
 .desc{
     display: inline-block;
-    width: 40vw;
+    width: 45vw;
+    font-size: 2vh;
     color: white;
+    margin-bottom: 3vw;
 }
 .loginBtn button{
     color: #E5D283;
@@ -57,6 +59,8 @@
     text-align: center;
     transition: all 0.5s;
     cursor: pointer;
+    margin-bottom: 5vw;
+    display: inline-block;
 }
 .loginBtn button:hover{
     color: white;
@@ -137,7 +141,7 @@ section h2{
 }
 
 .slider{
-    height: 350px;
+    height: 300px;
     margin: auto;
     position: relative;
     width: 100%;
@@ -187,7 +191,7 @@ section h2{
     position: relative;
     display: flex;
     align-items: center;
-    box-shadow: 5px 5px 20px black;
+    /* box-shadow: 5px 5px 20px black; */
     /* padding: 15px; */
     margin: 15px;
     perspective: 100px;
@@ -235,27 +239,6 @@ section h2{
 }
 .content:hover > *{
     transform: translateY(0px);
-}
-
-.slider::before,
-.slider::after{
-    background: linear-gradient(to right, rgb(255, 255, 255, 1) 0%, rgb(255, 255, 255, 0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 2%;
-    z-index: 2;
-}
-
-.slider::before{
-    left: 0;
-    top: 0;
-}
-
-.slider::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
 }
 /* slider CSS ends  */
 
@@ -317,35 +300,40 @@ section h2{
 .faq.active .answer{
     max-height: 300px;
 }
-@media screen and (max-width :500px) {
+@media screen and (max-width :750px) {
     .banner{
-        width: cover;
-        height: 88vh;
-        padding-top: 20px;
+        padding-top: 30px;
         padding-left: 20px;
         overflow: hidden;
         margin: 0;
     }
     .banner-text{
-        margin-top: 40px;
-        margin-bottom: 10px;
+        margin-top: 12vw;
+        margin-bottom: 7vw;
         display: inline-block;
     }
     .banner-text h1{
         color: white;
-        font-size: 42px;
+        font-size: 6vh;
         font-weight: 600;
-        line-height: 48px;
+        line-height: 7vh;
         letter-spacing: 1px;
     }
     .banner-text p{
-        margin-top: 10px;
+        margin-top: 7vw;
     }
     .desc{
         display: inline-block;
-        font-size: 12px;
-        width: 80vw;
+        font-size: 3vw;
+        width: 85vw;
         color: white;
+    }
+
+    section h2{
+        margin: 30px 0 0 15px;
+        color: #4F709C;
+        font-size: 6vh;
+        font-weight: 600;
     }
     .logo a img{
         display: flex;
