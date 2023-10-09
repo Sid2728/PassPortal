@@ -383,6 +383,7 @@ section h2{
     background-color: #4F709C;
     margin-top: 1rem;
     padding: 1rem;
+    border: 2px solid black;
   }
   
   .footer-left {
