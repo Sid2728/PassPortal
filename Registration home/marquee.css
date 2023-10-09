@@ -1,0 +1,44 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+*{
+    margin: 0;
+
+}
+.text-wrapper1,.text-wrapper2{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: #213555;
+    color: white;
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-size: 36px;
+}
+.text-wrapper1 div{
+    white-space: nowrap;
+    padding: 0 3rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+}
+.text-wrapper2 div{
+    white-space: nowrap;
+    padding: 0 3rem;
+    letter-spacing: 1px;
+    animation: move-lft 6000ms linear infinite;
+}
+@keyframes move-rtl{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes move-lft{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
