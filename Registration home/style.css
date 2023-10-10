@@ -410,4 +410,13 @@ section h2{
     
     height: 20px;
   }
+@media (max-width: 768px) {
+    .footer img {
+        height: 3vw; 
+    }
+
+    .footer a {
+        margin-left: 0.3rem; 
+    }
+}
 /* footer CSS ends */
